@@ -55,7 +55,7 @@ namespace Contract
                 string strConnection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ContractDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 SqlConnection sqlConnection = new SqlConnection(strConnection);
                 sqlConnection.Open();
-                string updateQuery = "UPDATE ContractTable SET Title = '"+TitleBox.Text+ "', CType = '" + TypeBox.Text + "' , PartyName = '" + PartyNameBox.Text + "' , Stage = '" + StageBox.Text + "', CStatus = '" + StatusBox.Text + "', Risk = '" + RiskBox.Text + "', EffectiveDate = '" + EffectiveBox.Text + "', ExpiryDate = '" + ExpiryBox.Text + "', Comment = '" + CommentBox.Text + "' WHERE ContractId = '" + id+"'";
+                string updateQuery = "UPDATE ContractTable SET Title = '"+TitleBox.Text+ "', CType = '" + TypeBox.Text + "' , PartyName = '" + PartyNameBox.Text + "' , Stage = '" + StageBox.Text + "', CStatus = '" + StatusBox.Text + "', Risk = '" + RiskBox.Text + "', EffectiveDate = '" + DropDownList2.Text + "."+DropDownList1.Text+"."+DropDownList3.Text+"', ExpiryDate = '" + DropDownList5.Text + "."+DropDownList4.Text+"."+DropDownList6.Text+"', Comment = '" + CommentBox.Text + "' WHERE ContractId = '" + id+"'";
                 SqlCommand cmd = new SqlCommand(updateQuery, sqlConnection);
                 cmd.ExecuteReader();
                 Response.Redirect("Search.aspx");
