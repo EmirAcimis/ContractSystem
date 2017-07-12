@@ -9,14 +9,15 @@
             &nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" Height="26px" Width="80px" BackColor="Thistle" Font-Italic="true" />
         </p>
-        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="ContractId" Height="226px" Width="530px" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="Double" BorderWidth="1px" CellPadding="3" CellSpacing="2" OnRowDeleting="GridView2_RowDeleting">
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="ContractId" Height="226px" Width="530px" BackColor="#DEBA84" BorderColor="#DEBA84" BorderStyle="Double" BorderWidth="1px" CellPadding="3" CellSpacing="2" OnRowDeleting="GridView2_RowDeleting" OnSelectedIndexChanging="GridView2_SelectedIndexChanging">
             <Columns>
                 <asp:BoundField DataField="ContractId" HeaderText="ContractId" ReadOnly="True" SortExpression="ContractId" InsertVisible="False" />
                 <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
                 <asp:BoundField DataField="PartyName" HeaderText="PartyName" SortExpression="PartyName" />
                 <asp:BoundField DataField="EffectiveDate" HeaderText="EffectiveDate" SortExpression="EffectiveDate" />
-                <asp:BoundField DataField="ExpiryDate " HeaderText="ExpiryDate " SortExpression="ExpiryDate " />
-                <asp:CommandField ShowDeleteButton="True"></asp:CommandField>
+                <asp:BoundField DataField="ExpiryDate" HeaderText="ExpiryDate" SortExpression="ExpiryDate" />
+                <asp:CommandField ShowDeleteButton="True" ButtonType="Button"></asp:CommandField>
+                <asp:CommandField ShowSelectButton="True" ButtonType="Button"></asp:CommandField>
             </Columns>
             <FooterStyle BackColor="#F7DFB5" ForeColor="#8C4510" />
             <HeaderStyle BackColor="#A55129" Font-Bold="True" ForeColor="White" />
