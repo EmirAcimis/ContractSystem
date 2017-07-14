@@ -42,7 +42,7 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" runat="server" href="~/Login">CMS</a>
+                    <a class="navbar-brand" runat="server" href="~/Login">Sözleşme Yönetim Sistemi</a>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Petkim IT</p>
             </footer>
         </div>
 

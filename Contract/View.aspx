@@ -1,23 +1,21 @@
-﻿<%@ Page Title="View Contract" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="View.aspx.cs" Inherits="Contract.View" %>
+﻿<%@ Page Title="Sözleşme Görüntüleme" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="View.aspx.cs" Inherits="Contract.View" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <h1>View</h1>
-        <p>ID:
-            <asp:TextBox ID="IDBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Title:
-            <asp:TextBox ID="TitleBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Type:
-            <asp:TextBox ID="TypeBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Party Name:
-            <asp:TextBox ID="PartyNameBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Stage:
-            <asp:TextBox ID="StageBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Status:
-            <asp:TextBox ID="StatusBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Risk:
-            <asp:TextBox ID="RiskBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Effective Date:
-            <asp:TextBox ID="EffectiveBox" runat="server" Width="100px" Height="20px" Enabled="false"></asp:TextBox>
+        <h2>Görüntüleme</h2>
+        <p>Sözleşme No: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="IDBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Sözleşme Adı: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="TitleBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Sözleşme Türü:&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="TypeBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Taraf:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="PartyNameBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Sözleşme Konusu:
+            <asp:TextBox ID="StatusBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Birimi:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="DepartmentBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Başlama Tarihi:&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="EffectiveBox" runat="server" Width="300px" Height="30px" Enabled="false" ></asp:TextBox>
             <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
@@ -79,8 +77,8 @@
                 <asp:ListItem>2026</asp:ListItem>
             </asp:DropDownList>
         </p>
-        <p>Expiry Date:
-            <asp:TextBox ID="ExpiryBox" runat="server" Width="100px" Height="20px" Enabled="false"></asp:TextBox>
+        <p>Bitiş Tarihi:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="ExpiryBox" runat="server" Width="300px" Height="30px" Enabled="false"></asp:TextBox>
             <asp:DropDownList ID="DropDownList4" runat="server" AutoPostBack="True">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
@@ -142,9 +140,9 @@
                 <asp:ListItem>2026</asp:ListItem>
             </asp:DropDownList>
         </p>
-        <p>Comment:
-            <asp:TextBox ID="CommentBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <asp:Button ID="Button1" runat="server" Text="Update Contract" OnClick="Button1_Click"/>
+        <p>Açıklama: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="CommentBox" runat="server" Width="300px" Height="100px"></asp:TextBox></p>
+        <asp:Button ID="Button1" runat="server" Text="Güncelle" OnClick="Button1_Click"/>
     </div>
     <div class="row">
         <div class="col-md-4">

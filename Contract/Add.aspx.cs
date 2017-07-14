@@ -22,7 +22,7 @@ namespace Contract
                 string strConnection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ContractDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 SqlConnection sqlConnection = new SqlConnection(strConnection);
                 sqlConnection.Open();
-                string myQuery = "INSERT INTO ContractTable (Title, CType, PartyName, Stage, CStatus, Risk, EffectiveDate, ExpiryDate, Comment) VALUES ( '" + TitleBox.Text + " ' ,'" + TypeBox.Text + " ' ,'" + PartyNameBox.Text + " ' ,'" + StageBox.Text + " '  ,'" + StatusBox.Text + " '  ,'" + RiskBox.Text + " ' , '" +DropDownList2.Text+ "."+ DropDownList1.Text+"."+DropDownList3.Text+" ', ' " + DropDownList5.Text + "." +DropDownList4.Text+ "." +DropDownList6.Text+ " ','  " + CommentBox.Text + " ')";
+                string myQuery = "INSERT INTO ContractTable (Title, CType, PartyName, CStatus, Department, EffectiveDate, ExpiryDate, Comment) VALUES ( '" + TitleBox.Text + " ' ,'" + TypeBox.Text + " ' ,'" + PartyNameBox.Text + " ','" + StatusBox.Text + " '  ,'" + DepartmentBox.Text + " ' , '" +DropDownList2.Text+ "."+ DropDownList1.Text+"."+DropDownList3.Text+" ', ' " + DropDownList5.Text + "." +DropDownList4.Text+ "." +DropDownList6.Text+ " ','  " + CommentBox.Text + " ')";
                 SqlCommand cmd = new SqlCommand(myQuery, sqlConnection);
                 cmd.ExecuteNonQuery();
                 Response.Redirect("HomePage.aspx");

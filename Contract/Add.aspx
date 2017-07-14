@@ -1,21 +1,19 @@
-﻿<%@ Page Title="Add Contract" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="Contract.Add" %>
+﻿<%@ Page Title="Sözleşme Ekleme" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="Contract.Add" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <h1>Add</h1>
-        <p>Title:
-            <asp:TextBox ID="TitleBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Type:
-            <asp:TextBox ID="TypeBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Party Name:
-            <asp:TextBox ID="PartyNameBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Stage:
-            <asp:TextBox ID="StageBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Status:
-            <asp:TextBox ID="StatusBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>Risk:
-            <asp:TextBox ID="RiskBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
-        <p>EffectiveDate:
+        <h2>Sözleşme Ekleme</h2>
+        <p>Sözleşme Adı:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="TitleBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Sözleşme Türü:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="TypeBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Taraf:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="PartyNameBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Sözleşme Konusu:&nbsp
+            <asp:TextBox ID="StatusBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Birimi:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:TextBox ID="DepartmentBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
+        <p>Başlama Tarihi:
             <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
@@ -77,7 +75,7 @@
                 <asp:ListItem>2026</asp:ListItem>
             </asp:DropDownList>
         </p>
-        <p>Expiry Date:
+        <p>Bitiş Tarihi:
             <asp:DropDownList ID="DropDownList4" runat="server" AutoPostBack="True">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
@@ -139,10 +137,10 @@
                 <asp:ListItem>2026</asp:ListItem>
             </asp:DropDownList>
         </p>
-        <p>Comment:
-            <asp:TextBox ID="CommentBox" runat="server" Width="100px" Height="20px"></asp:TextBox></p>
+        <p>Açıklama:
+            <asp:TextBox ID="CommentBox" runat="server" Width="300px" Height="100px"></asp:TextBox></p>
         
-        <asp:Button ID="Button1" runat="server" Text="Add Contract" OnClick="Button1_Click1" />
+        <asp:Button ID="Button1" runat="server" Text="Ekle" OnClick="Button1_Click1" />
     </div>
     <div class="row">
         <div class="col-md-4">

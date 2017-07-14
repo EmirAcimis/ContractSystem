@@ -22,7 +22,7 @@ namespace Contract
 
             String a = TextBox1.Text;
             if (a != null)
-                myQuery = "SELECT * FROM ContractTable WHERE ContractId LIKE '%" + a + "%' OR  CType LIKE '%" + a + "%' OR PartyName LIKE '%" + a + "%' OR Stage LIKE '%" + a + "%' OR CStatus LIKE '%" + a + "%' OR Risk LIKE '%" + a + "%' OR EffectiveDate LIKE '%" + a + "%' OR ExpiryDate  LIKE '%" + a + "%' OR Comment LIKE '%" + a + "%' ";
+                myQuery = "SELECT * FROM ContractTable WHERE ContractId LIKE '%" + a + "%' OR  CType LIKE '%" + a + "%' OR PartyName LIKE '%" + a + "%' OR CStatus LIKE '%" + a + "%' OR Department LIKE '%" + a + "%' OR EffectiveDate LIKE '%" + a + "%' OR ExpiryDate  LIKE '%" + a + "%' OR Comment LIKE '%" + a + "%' ";
 
             else
                 myQuery = "SELECT * FROM ContractTable ";

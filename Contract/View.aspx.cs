@@ -31,9 +31,8 @@ namespace Contract
                         TitleBox.Text = reader["Title"].ToString();
                         TypeBox.Text = reader["CType"].ToString();
                         PartyNameBox.Text = reader["PartyName"].ToString();
-                        StageBox.Text = reader["Stage"].ToString();
                         StatusBox.Text = reader["CStatus"].ToString();
-                        RiskBox.Text = reader["Risk"].ToString();
+                        DepartmentBox.Text = reader["Department"].ToString();
                         EffectiveBox.Text = reader["EffectiveDate"].ToString();
                         ExpiryBox.Text = reader["ExpiryDate"].ToString();
                         CommentBox.Text = reader["Comment"].ToString();
@@ -55,7 +54,7 @@ namespace Contract
                 string strConnection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ContractDatabase;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 SqlConnection sqlConnection = new SqlConnection(strConnection);
                 sqlConnection.Open();
-                string updateQuery = "UPDATE ContractTable SET Title = '"+TitleBox.Text+ "', CType = '" + TypeBox.Text + "' , PartyName = '" + PartyNameBox.Text + "' , Stage = '" + StageBox.Text + "', CStatus = '" + StatusBox.Text + "', Risk = '" + RiskBox.Text + "', EffectiveDate = '" + DropDownList2.Text + "."+DropDownList1.Text+"."+DropDownList3.Text+"', ExpiryDate = '" + DropDownList5.Text + "."+DropDownList4.Text+"."+DropDownList6.Text+"', Comment = '" + CommentBox.Text + "' WHERE ContractId = '" + id+"'";
+                string updateQuery = "UPDATE ContractTable SET Title = '"+TitleBox.Text+ "', CType = '" + TypeBox.Text + "' , PartyName = '" + PartyNameBox.Text + "', CStatus = '" + StatusBox.Text + "', Department = '" + DepartmentBox.Text + "', EffectiveDate = '" + DropDownList2.Text + "."+DropDownList1.Text+"."+DropDownList3.Text+"', ExpiryDate = '" + DropDownList5.Text + "."+DropDownList4.Text+"."+DropDownList6.Text+"', Comment = '" + CommentBox.Text + "' WHERE ContractId = '" + id+"'";
                 SqlCommand cmd = new SqlCommand(updateQuery, sqlConnection);
                 cmd.ExecuteReader();
                 Response.Redirect("Search.aspx");
