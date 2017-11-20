@@ -13,8 +13,8 @@
             <asp:TextBox ID="StatusBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
         <p>Birimi:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <asp:TextBox ID="DepartmentBox" runat="server" Width="300px" Height="30px"></asp:TextBox></p>
-        <p>Başlama Tarihi:
-            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+        <p>Başlama Tarihi:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:DropDownList ID="DropDownList1" runat="server">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
@@ -47,7 +47,7 @@
                 <asp:ListItem>30</asp:ListItem>
                 <asp:ListItem>31</asp:ListItem>
             </asp:DropDownList>
-            - <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True">
+            - <asp:DropDownList ID="DropDownList2" runat="server">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
@@ -61,7 +61,7 @@
                 <asp:ListItem>11</asp:ListItem>
                 <asp:ListItem>12</asp:ListItem>
             </asp:DropDownList>
-            - <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True">
+            - <asp:DropDownList ID="DropDownList3" runat="server">
                 <asp:ListItem>2017</asp:ListItem>
                 <asp:ListItem>2018</asp:ListItem>
                 <asp:ListItem>2019</asp:ListItem>
@@ -75,8 +75,8 @@
                 <asp:ListItem>2026</asp:ListItem>
             </asp:DropDownList>
         </p>
-        <p>Bitiş Tarihi:
-            <asp:DropDownList ID="DropDownList4" runat="server" AutoPostBack="True">
+        <p>Bitiş Tarihi: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <asp:DropDownList ID="DropDownList4" runat="server">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
@@ -109,7 +109,7 @@
                 <asp:ListItem>30</asp:ListItem>
                 <asp:ListItem>31</asp:ListItem>
             </asp:DropDownList>
-            - <asp:DropDownList ID="DropDownList5" runat="server" AutoPostBack="True">
+            - <asp:DropDownList ID="DropDownList5" runat="server">
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
@@ -123,7 +123,7 @@
                 <asp:ListItem>11</asp:ListItem>
                 <asp:ListItem>12</asp:ListItem>
             </asp:DropDownList>
-            - <asp:DropDownList ID="DropDownList6" runat="server" AutoPostBack="True">
+            - <asp:DropDownList ID="DropDownList6" runat="server">
                 <asp:ListItem>2017</asp:ListItem>
                 <asp:ListItem>2018</asp:ListItem>
                 <asp:ListItem>2019</asp:ListItem>
@@ -137,7 +137,7 @@
                 <asp:ListItem>2026</asp:ListItem>
             </asp:DropDownList>
         </p>
-        <p>Açıklama:
+        <p>Açıklama:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <asp:TextBox ID="CommentBox" runat="server" Width="300px" Height="100px"></asp:TextBox></p>
         
         <asp:Button ID="Button1" runat="server" Text="Ekle" OnClick="Button1_Click1" />

@@ -33,8 +33,8 @@ namespace Contract
                         PartyNameBox.Text = reader["PartyName"].ToString();
                         StatusBox.Text = reader["CStatus"].ToString();
                         DepartmentBox.Text = reader["Department"].ToString();
-                        EffectiveBox.Text = reader["EffectiveDate"].ToString();
-                        ExpiryBox.Text = reader["ExpiryDate"].ToString();
+                        EffectiveBox.Text = string.Format("{0:dd.MM.yyyy}",reader["EffectiveDate"]);
+                        ExpiryBox.Text = string.Format("{0:dd.MM.yyyy}", reader["ExpiryDate"]);
                         CommentBox.Text = reader["Comment"].ToString();
                     }
                     
